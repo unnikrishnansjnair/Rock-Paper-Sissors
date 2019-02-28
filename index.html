@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
     <meta charset="utf-8">
-    <link rel="stylesheet " href="styles/styles.css">
-    <head><title>GAME</title></head>
+    <head>
+        <link rel="shortcut icon" href="images/rock-paper-scissors-game-vector-3959189.jpg" type="image/jpg" sizes="16x16">
+        <title>GAME</title>
+    </head>
     <body>
         <header>
-           <h1>Rock Paper Sissors</h1>
+           <h1>
+                <img src="images/sticker375x360.png" class="logo">Rock Paper Sissors</h1>
         </header>
-        
+                     
+            <div class="game" id="game">
+                    <div class="selectChoise" id="selectChoise">Please select your choise   </div>
+               <!--<input type="" id="text1" class="gameInp" name="text1" placeholder="Enter the Game point" required>--> 
+                
+            <!--    <div class="drop">
+                    <div class="labl">Select the Game point</div>
+                    <select class="dropdown" id="list">
+                            <option class="dropdown-content" name="gamept" id="gamept" value="15">15</option>
+                            <option class="dropdown-content" name="gamept" id="gamept" value="20">20</option>
+                            <option class="dropdown-content" name="gamept" id="gamept" value="25">25</option>
+                    </select>
+                    <input type="submit" id="button" onclick="getInput(this.value);" class="inpbutton" value="Go">
+                </div>
+            -->
+            
+            <!--<tr class="select">
+                <td class="select">
+                    <p class="select"> <input class="select" type="radio" id="gamept" name="gamept" value="15" > 15
+                     <input class="select" type="radio" id="gamept" name="gamept" value="20"> 20
+                     <input class="select" type="radio" id="gamept" name="gamept" value="25"> 25</p>
+                     
+                    <input type="button" id="button" class="inpbutton" value="Go">
+                </td>
+            </tr> -->
+            <div id="15" class="gamept">15</div>
+            <div id="20" class="gamept">20</div>
+            <div id="25" class="gamept">25</div>
+                            
+            </div>
+            <div class="gamePoint" id="gamePoint">Set Your Game Point</div>
+             
+       
+        <script lang="javascript">
+            function showGamePoint(){
+                document.getElementById('gamePoint').innerHTML = document.getElementById("text1").value;
+            }   
+        </script>
         <div class="score-board">
+            <div id="board" >SCORE BOARD</div>
             <div id="user-label" class="badges">User</div>
             <div id="comp-label"class="badges">Comp</div>
             <span id="user-score">0</span>:<span id="computer-score">0</span>
@@ -20,18 +61,21 @@
 
         <div class="choices">
             <div class="choice" id="r">
-                <img class="im" src="images/rock1.png" alt="">
+                <img class="im" src="images/rock1.png" alt="ROCK" title="ROCK">
             </div>
             <div class="choice" id="p">
-                <img class="im" src="images/paper1.png" alt="" >
+                <img class="im" src="images/paper1.png" alt="PAPER" title="PAPER">
             </div>
             <div class="choice" id="s">
-                <img class="im" src="images/sis.png" alt="" >
+                <img class="im" src="images/sis.png" alt="SISSORS" title="SISSORS">
             </div>
         </div>
 
         <p id="action-message">Make Your Move</p>
+        <p id="final-result"> </p>
         
     <script src="js/app.js" charset="utf-8"></script>
+    
+    <link rel="stylesheet " href="styles/styles.css">
     </body>
 </html>
