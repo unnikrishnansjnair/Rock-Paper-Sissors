@@ -50,8 +50,10 @@ function win(userchoise,compchoise,getGamePoint){
     {
         result_p.innerHTML="Great.. You won the Match..!";
         alert("Great.. You won the Match by "+userScore+" : "+getGamePoint+" ..!");
-        window.location.reload();
+        //window.location.reload();
         userScore=0;compScore=0;
+        userScoreSpan.innerHTML=userScore;
+        compScoreSpan.innerHTML=compScore;
     }
     console.log("You win");
 }
@@ -70,8 +72,10 @@ function lose(userchoise,compchoise,getGamePoint){
     {
         result_p.innerHTML="Sorry.. Better luck next time..!";
         alert("Sorry.. You lost by "+userScore+" : "+getGamePoint+" . Better luck next time..!");
-        window.location.reload();
+        //window.location.reload();
         userScore=0;compScore=0;
+        userScoreSpan.innerHTML=userScore;
+        compScoreSpan.innerHTML=compScore;
     }
 }
 
