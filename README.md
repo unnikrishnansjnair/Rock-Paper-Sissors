@@ -2,6 +2,4 @@
 # Rock paper sissors game
 
 
-![screenshot 1](https://user-images.githubusercontent.com/47817448/53412564-b51c2b80-39ef-11e9-912d-bba68029b19b.png)
-
-Courtesy : https://www.youtube.com/watch?v=jaVNP3nIAv0 
+![screenshot 2](https://user-images.githubusercontent.com/47817448/53546941-ababd400-3b53-11e9-8acc-e1290e217616.png)
